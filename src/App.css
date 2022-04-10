@@ -12,8 +12,13 @@ a{
   width: 84%;
   height: 30%;
   margin: auto;
-  position: relative;
-  top: 50px;
+  /* position: relative;
+  top: 50px; */
+
+}
+.pianoHolder{
+height: 30vh;
+margin-top: 15vh;
 }
 .key{
   border: black 2px solid;
@@ -27,4 +32,7 @@ a{
   text-align: center;
   position: relative;
   top: 10vh;
+}
+.backgroundSize{
+  height: 100vh;
 }

@@ -1,12 +1,15 @@
 import React from 'react';
-import TestSounds from './SoundPlayer';
+import SoundPlayer from './SoundPlayer';
+import LandingPage from './LandingPage';
 
 export default function MainComponent(){
 
 
     return(
         <div>
-            <TestSounds />
+     
+            <LandingPage />
+            <SoundPlayer />
         </div>
     )
 }

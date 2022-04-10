@@ -1,0 +1,10 @@
+.background{
+    background-image: url(../assets/image/music.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.landingStyle h1{
+    color: white;
+    text-align: center;
+    /* margin-top: 50vh; */
+}

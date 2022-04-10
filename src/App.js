@@ -1,6 +1,7 @@
 import './App.css';
 import MainComponent from './components/MainComponent';
-<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     // <div className="App">
