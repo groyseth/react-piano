@@ -216,6 +216,7 @@ export default function TestSounds(){
         document.getElementById("clear").addEventListener("click", clearArray);
 
         return () => document.removeEventListener("keypress", handleKeyDown);
+         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
     

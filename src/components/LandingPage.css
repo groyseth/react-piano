@@ -6,5 +6,13 @@
 .landingStyle h1{
     color: white;
     text-align: center;
-    /* margin-top: 50vh; */
+    /* animation-name: title;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; */
+ position: relative;
+ top: 50vh;
 }
+/* @keyframes title {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} */

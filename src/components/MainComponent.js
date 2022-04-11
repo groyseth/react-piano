@@ -2,14 +2,16 @@ import React from 'react';
 import SoundPlayer from './SoundPlayer';
 import LandingPage from './LandingPage';
 
-export default function MainComponent(){
+export default function MainComponent() {
 
 
-    return(
+    return (
         <div>
-     
+
             <LandingPage />
+          
             <SoundPlayer />
         </div>
     )
 }
+
