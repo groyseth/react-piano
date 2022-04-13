@@ -1,8 +1,8 @@
-.background{
+/* .background{
     background-image: url(../assets/image/music.jpg);
     background-size: cover;
     height: 100vh;
-}
+} */
 .landingStyle h1{
     color: white;
     text-align: center;
@@ -16,3 +16,20 @@
     from {opacity: 0;}
     to {opacity: 1;}
 } */
+.Parallax {
+    /* display: flex; */
+    justify-content: center;
+    /* background-image: url(../assets/image/music.jpg);
+    background-size: cover;
+    height: 100vh; */
+}
+.Parallax__background{
+    background-image: url(../assets/image/music.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.Parallax__background-note{
+    background-image: url(../assets/image/note.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+}
