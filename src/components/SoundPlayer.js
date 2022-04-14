@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { Row } from 'react-bootstrap';
 import piano from "../assets/audio/index"
 
 export default function TestSounds(){
@@ -354,17 +355,26 @@ function buttonClick(e){
   <input type="text" id="text_box" placeholder='Type to play!' />
   </div>
 <section className='pianoHolder'>
+  {/* <Row> */}
   <div className="piano-box " id="click_box" >
-    <button class="key" id="a" >C</button>
-    <button class="key" id="s" >D</button>
-    <button class="key" id="d">E</button>
-    <button class="key" id="f">F</button>
-    <button class="key" id="g">G</button>
-    <button class="key" id="h">A</button>
-    <button class="key" id="j">B</button>
-    <button class="key" id="k">C</button>
+   
+    <button class="key white" id="a" >C</button>
+    <button class="key black" id="w" >C#</button>
+    <button class="key white" id="s" >D</button>
+    <button class="key black" id="e" >E#</button>
+    <button class="key white" id="d">E</button>
+    <button class="key white" id="f">F</button>
+    <button class="key black" id="t" >F#</button>
+    <button class="key white" id="g">G</button>
+    <button class="key black" id="y">G#</button>
+    <button class="key white" id="h">A</button>
+    <button class="key black" id="u">A#</button>
+    <button class="key white" id="j">B</button>
+    <button class="key white" id="k">C</button>
+    <button class="key black" id="o">C#</button>
   
 </div>
+{/* </Row> */}
 </section>  
 
   <div class="buttonMove">
