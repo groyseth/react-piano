@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import piano from "../assets/audio/index"
 
 export default function TestSounds(){
@@ -337,12 +337,19 @@ function buttonClick(e){
   console.log(clickKey);
   testFunction(clickKey);
   }
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
 
 
     return(
-        <div className='backgroundSize'>
+        <div className='backgroundSize' style={{transform: `translateY(${offsetY * 0.3}px)`}}>
             <div className="text-box">
   <input type="text" id="text_box" placeholder='Type to play!' />
   </div>

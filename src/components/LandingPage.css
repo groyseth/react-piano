@@ -1,8 +1,3 @@
-/* .background{
-    background-image: url(../assets/image/music.jpg);
-    background-size: cover;
-    height: 100vh;
-} */
 .landingStyle h1{
     color: white;
     text-align: center;
@@ -27,9 +22,18 @@
     background-image: url(../assets/image/music.jpg);
     background-size: cover;
     height: 100vh;
+    
 }
 .Parallax__background-note{
     background-image: url(../assets/image/note.jpg);
-    height: 100%;
     background-repeat: no-repeat;
+    height: 27vh;
+    width: 16vw;
+}
+.Parallax__content{
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 34vh;
+    text-shadow: 2px 2px black;
 }

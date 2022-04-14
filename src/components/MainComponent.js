@@ -1,7 +1,7 @@
 import React from 'react';
 import SoundPlayer from './SoundPlayer';
 import LandingPage from './LandingPage';
-
+import Space from './Space';
 export default function MainComponent() {
 
 
@@ -9,7 +9,7 @@ export default function MainComponent() {
         <div>
 
             <LandingPage />
-          
+          {/* <Space /> */}
             <SoundPlayer />
         </div>
     )

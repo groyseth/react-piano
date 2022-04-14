@@ -350,10 +350,10 @@ function recorded(letter){
 // }
 return(
   <div>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Play The Piano</h1>
-      <p class="lead">Enjoy, still a work in progress but there is more to come!</p>
+  <div className="jumbotron jumbotron-fluid">
+    <div className="container">
+      <h1 className="display-4">Play The Piano</h1>
+      <p className="lead">Enjoy, still a work in progress but there is more to come!</p>
     </div>
   </div>
   
