@@ -1,6 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import { Row } from 'react-bootstrap';
+import React, {useEffect, useState, useRef} from 'react';
+import { Overlay, OverlayTrigger, Tooltip, Button } from 'react-bootstrap';
 import piano from "../assets/audio/index"
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 export default function TestSounds(){
 
@@ -345,6 +347,9 @@ function buttonClick(e){
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() =>{
+    AOS.init({ duration:2000, disable: 'mobile' });
+  }, []);
 
 
     return(
@@ -354,33 +359,45 @@ function buttonClick(e){
   </div>
 <section className='pianoHolder'>
   {/* <Row> */}
-  <div className="piano-box " id="click_box" >
+  <div className="piano-box " id="click_box" data-aos="fade-down-right">
    
-    <button class="key white" id="a" >C</button>
-    <button class="key black" id="w" >C#</button>
-    <button class="key white" id="s" >D</button>
-    <button class="key black" id="e" >E#</button>
-    <button class="key white" id="d">E</button>
-    <button class="key white" id="f">F</button>
-    <button class="key black" id="t" >F#</button>
-    <button class="key white" id="g">G</button>
-    <button class="key black" id="y">G#</button>
-    <button class="key white" id="h">A</button>
-    <button class="key black" id="u">A#</button>
-    <button class="key white" id="j">B</button>
-    <button class="key white" id="k">C</button>
-    <button class="key black" id="o">C#</button>
+    <button class="key white" id="a" ><p>C</p></button>
+    <button class="key black" id="w" ><p>C#/D♭</p></button>
+    <button class="key white" id="s" ><p>D</p></button>
+    <button class="key black" id="e" ><p>D#/E♭</p></button>
+    <button class="key white" id="d"><p>E</p></button>
+    <button class="key white" id="f"><p>F</p></button>
+    <button class="key black" id="t" ><p>F#/G♭</p></button>
+    <button class="key white" id="g"><p>G</p></button>
+    <button class="key black" id="y"><p>G#/A♭</p></button>
+    <button class="key white" id="h"><p>A</p></button>
+    <button class="key black" id="u"><p>A#/B♭</p></button>
+    <button class="key white" id="j"><p>B</p></button>
+    <button class="key white" id="k"><p>C</p></button>
+    <button class="key black" id="o"><p>C#/D♭</p></button>
   
 </div>
-{/* </Row> */}
+
 </section>  
 
   <div class="buttonMove">
-<button type="click" id="playBack">Replay</button>
-{/* </div>
-<div class="buttonMove"> */}
-<button type="click" id="clear">Reset</button>
-</div>
+<Button type="click" id="playBack" data-aos="zoom-in-down" >Replay</Button>
+
+
+{['top'].map((placement) => (
+    <OverlayTrigger
+      key={placement}
+      placement={placement}
+      overlay={
+        <Tooltip id={`tooltip-${placement}`}>
+          Clear Your Pressed Keys.
+        </Tooltip>
+      }
+    >
+    <Button type="click" id="clear" data-aos="zoom-in-down">Reset</Button>
+    </OverlayTrigger>
+  ))}
+        </div>
         </div>
         
     )
