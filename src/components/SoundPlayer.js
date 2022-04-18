@@ -8,7 +8,7 @@ export default function TestSounds(){
 
     var randomArr = [];
     function testFunction(key) {
-      console.log(key, "testFucntion");
+      // console.log(key, "testFucntion");
       
       if (key.key || key) {
       //  randomArr.push(key.key || key)
@@ -18,6 +18,7 @@ export default function TestSounds(){
             // default: aLiteralKey()
             console.log("keypresseda");
             aLiteralKey()
+            // keyPlayer(key)
             randomArr.push(key.key || key)
             
             break;
@@ -118,7 +119,7 @@ export default function TestSounds(){
        switch (test) {
        case "a":
          console.log("keypresseda");
-         aLiteralKey()
+        //  aLiteralKey()
          // litterArr.push(aLiteralKey)
        
          console.log("apushed");
@@ -205,18 +206,15 @@ export default function TestSounds(){
         console.log("cleared");
         randomArr=[];
       }
-      const handleKeyDown = (e) => {
-        console.log(e.key);
-      };
+    
     
       useEffect(() => {
-        document.addEventListener("keypress", handleKeyDown);
         document.addEventListener("keypress", testFunction);
         document.getElementById("playBack").addEventListener("click", usingSound);
         document.getElementById("click_box").addEventListener("click", buttonClick);
         document.getElementById("clear").addEventListener("click", clearArray);
-
-        return () => document.removeEventListener("keypress", handleKeyDown);
+return
+        // return () => document.removeEventListener("keypress", handleKeyDown);
          // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
