@@ -362,19 +362,19 @@ function buttonClick(e){
   <div className="piano-box " id="click_box" data-aos="fade-down-right">
    
     <button class="key white" id="a" ><p>C</p></button>
-    <button class="key black" id="w" ><p>C#/D♭</p></button>
+    <button class="key black" id="w" data-aos="zoom"><p>C#/D♭</p></button>
     <button class="key white" id="s" ><p>D</p></button>
-    <button class="key black" id="e" ><p>D#/E♭</p></button>
+    <button class="key black" id="e" data-aos="zoom"><p>D#/E♭</p></button>
     <button class="key white" id="d"><p>E</p></button>
     <button class="key white" id="f"><p>F</p></button>
-    <button class="key black" id="t" ><p>F#/G♭</p></button>
+    <button class="key black" id="t" data-aos="zoom"><p>F#/G♭</p></button>
     <button class="key white" id="g"><p>G</p></button>
-    <button class="key black" id="y"><p>G#/A♭</p></button>
+    <button class="key black" id="y" data-aos="zoom"><p>G#/A♭</p></button>
     <button class="key white" id="h"><p>A</p></button>
-    <button class="key black" id="u"><p>A#/B♭</p></button>
+    <button class="key black" id="u" data-aos="zoom"><p>A#/B♭</p></button>
     <button class="key white" id="j"><p>B</p></button>
     <button class="key white" id="k"><p>C</p></button>
-    <button class="key black" id="o"><p>C#/D♭</p></button>
+    <button class="key black" id="o" data-aos="zoom"><p>C#/D♭</p></button>
   
 </div>
 
